@@ -27,9 +27,9 @@ Si on observe la relation existant entre ces deux variables, nous pouvons dire q
 
 L'équation de notre modèle est Y = aX + b + e.
 
-Y (Target) est la variable "price" 
-X est la variable explicative "squareMeters"
-e est le risque d'erreur du modèle.
+* Y (Target) est la variable "price" 
+* X est la variable explicative "squareMeters"
+* e est le risque d'erreur du modèle.
 
 Nous allons donc utiliser un modèle de régression linéaire simple pour effectuer nos prédictions de prix.
 
