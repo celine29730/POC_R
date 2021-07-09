@@ -39,7 +39,7 @@ Le modèle est obtenu gràce au code suivant:
 
 ## Visualisation des prédictions gràce à l'interface shiny
 
-On lance l'application à l'ade du fichier app_house2bis.R
+On lance l'application à l'aide du fichier app_house2bis.R
 
 le fichier comporte un bloc **ui** pour la partie mise en forme de la page et une partie **server** pour la partie plus importante des calculs (ici le calcul des prédictions de prix).
 
