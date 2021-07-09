@@ -48,8 +48,20 @@ le fichier comporte un bloc **ui** pour la partie mise en forme de la page et un
 Dans le premier onglet de l'interface graphique figurent les prédictions que l'on peut faire varier en fonction du curseur de surface.
 Dans le second onglet, on trouve la visualisation du dataset.
 
+![app2](https://github.com/celine29730/POC_R/blob/main/images/app2.jpg)
 
+il est possible d'appliquer un filtre sur le nombre d'enregistrement (show entries) et sur les valeurs du dataset (search).
 
+# Conclusion
+
+Si on veut établir un comparatif entre le langage R et Python, nous pouvons dire que:
+
+* **R est plus fonctionnel, Python est plus orienté objet**
+* **R a plus de fonction ‘built-in’ pour analyser des données, Python s’appuie sur des librairies.**
+* **Python a des packages “principaux” pour les tâches d’analyse de données, R a un plus grand écosystème de petits packages.**
+* **R est meilleur pour les statistiques de façon générale.**
+* **Il est généralement plus simple de faire des tâches non statistiques en Python.**
+* **Néanmoins,il existe de nombreux parallèles dans l’analyse de données des 2 langages.La syntaxe et les approches sont similaires pour de nombreuses tâches courantes dans les deux langages.
 
 
 
