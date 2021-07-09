@@ -41,7 +41,7 @@ Le modèle est obtenu gràce au code suivant:
 
 On lance l'application à l'aide du fichier app_house2bis.R
 
-le fichier comporte un bloc **ui** pour la partie mise en forme de la page et une partie **server** pour la partie plus importante des calculs (ici le calcul des prédictions de prix).
+le fichier comporte un bloc **ui** pour la partie mise en forme de la page et une partie **server** pour les calculs plus importants (ici le calcul des prédictions de prix).
 
 ![app1](https://github.com/celine29730/POC_R/blob/main/images/app1.jpg)
 
