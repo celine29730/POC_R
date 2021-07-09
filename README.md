@@ -14,6 +14,10 @@ Notre dataset comporte 1è variables numériques et ne possède pas de valeurs m
 La variable que l'on souhaite expliquée (Target) est la variable "price" et c'est sur cette variable que nous allons réaliser notre modèle de prédiction.
 On peut visualiser cette variable de prix à l'aide de l'histogramme suivant:
 
+![histo](https://github.com/celine29730/POC_R/blob/main/images/Histogramme_evol_prix.jpg)
+
+On va ensuite construire une matrice de corrélation afin de voir quelles sont les variables qui peuvent influencer le prix.
+
 
 
 
