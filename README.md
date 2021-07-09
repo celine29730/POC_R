@@ -18,6 +18,13 @@ On peut visualiser cette variable de prix à l'aide de l'histogramme suivant:
 
 On va ensuite construire une matrice de corrélation afin de voir quelles sont les variables qui peuvent influencer le prix.
 
+![corrélation](https://github.com/celine29730/POC_R/blob/main/images/Matrice_Corr%C3%A9lation.jpg)
+
+On constate que seule la variable sqaureMeters (surface) est corrélée avec la variable price. Nous obtenons un coefficient de corrélation de 99%.
+Si on observe la relation existant entre ces deux variables, nous puvons dire qu'il s'agit d'une relation parfaitement linéaire.
+
+
+
 
 
 
