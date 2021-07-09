@@ -41,11 +41,15 @@ Le modèle est obtenu gràce au code suivant:
 
 On lance l'application à l'ade du fichier app_house2bis.R
 
-le fichier comporte un bloc **ui** pour la partie mise en forme de la page et une partie **server** pour la partie plus importante des calculs (ici le calcul des prédictions de prix)
+le fichier comporte un bloc **ui** pour la partie mise en forme de la page et une partie **server** pour la partie plus importante des calculs (ici le calcul des prédictions de prix).
+
+![app1](https://github.com/celine29730/POC_R/blob/main/images/app1.jpg)
+
+Dans le premier onglet de l'interface graphique figurent les prédictions que l'on peut faire varier en fonction du curseur de surface.
+Dans le second onglet, on trouve la visualisation du dataset.
 
 
 
-On visualise nos prédictions 
 
 
 
