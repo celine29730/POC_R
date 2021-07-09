@@ -61,7 +61,7 @@ Si on veut établir un comparatif entre le langage R et Python, nous pouvons dir
 * **Python a des packages “principaux” pour les tâches d’analyse de données, R a un plus grand écosystème de petits packages.**
 * **R est meilleur pour les statistiques de façon générale.**
 * **Il est généralement plus simple de faire des tâches non statistiques en Python.**
-* **Néanmoins,il existe de nombreux parallèles dans l’analyse de données des 2 langages.La syntaxe et les approches sont similaires pour de nombreuses tâches courantes dans les deux langages.
+* **Néanmoins,il existe de nombreux parallèles dans l’analyse de données des 2 langages.La syntaxe et les approches sont similaires pour de nombreuses tâches courantes dans les deux langages.**
 
 
 
