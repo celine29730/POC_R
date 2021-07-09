@@ -7,5 +7,14 @@ On va utiliser R afin de créer un modèle prédictif. La visualisation des pré
 
 Ce projet nous permettra également de comparer avec un autre langage utilisé en modélisation statistiques, Python.
 
+## Analyse des données
+
+Notre dataset comporte 1è variables numériques et ne possède pas de valeurs manquantes.
+
+La variable que l'on souhaite expliquée (Target) est la variable "price" et c'est sur cette variable que nous allons réaliser notre modèle de prédiction.
+On peut visualiser cette variable de prix à l'aide de l'histogramme suivant:
+
+
+
 
 
