@@ -1,0 +1,142 @@
+---
+title: "Modèle de prédiction des prix de l'immobilier à Paris"
+output: html_notebook
+---
+
+[**Objectif du projet**]{.ul}
+
+Etablir un modèle de prédiction des prix des biens immobiliers sur Paris. La variable que l'on souhaite prédire est donc "price" (Target)
+
+Installation des bibliothèques
+
+```{r}
+install.packages('corrplot')
+library(corrplot)
+install.packages('tidyverse')
+library(tidyverse)
+install.packages('ggpubr')
+library(ggpubr)
+```
+
+Lecture du dataset
+
+```{r}
+data <- read.csv('C:/Users/utilisateur/Google Drive/microsoft_ia/POC_R/projetnuit/data/ParisHousing.csv')
+head(data)
+
+```
+
+Affichons les premières statistiques de base
+
+```{r}
+
+#affichage des colonnes du dataset
+colnames(data)
+
+```
+
+```{r}
+#affichage des types de variables
+str(data)
+```
+
+```{r}
+# taille du csv
+dim(data)
+
+#afficher les six premières années
+head(data$made)
+
+```
+
+```{r}
+
+#affichage des stats du dataset
+summary(data)
+
+
+```
+
+```{r}
+
+
+hist(data$price, freq=TRUE, main="Evolution des prix de l'immobilier sur Paris", xlab="prix", ylab="Fréquence", col = "blue")
+
+```
+
+Le dataset comporte 17 variables numériques
+
+**Corrélation des variables** Nous allons nous intéresser à la corrélation entre nos variables
+
+```{r}
+
+#Matrice Corrélation
+mcor <- cor(data)
+corrplot(mcor, tl.col="red")
+
+```
+
+```{r}
+cor(data$price, data$squareMeters, method = "pearson")
+```
+
+Nous constatons que seule la variable squareMeters est corrélée à 99% avec la variable price (TARGET)
+
+Nous allons donc étudier la relation entre la target (price) et la variable explicative SquareMeters (surface).
+
+```{r}
+#Visualisation du prix par rapport à la surface}
+ggplot(data, aes(x = squareMeters, y = price)) +
+  geom_point() +
+  stat_smooth()
+
+```
+
+On observe une relation linéaire entre les variables "price" et "squareMeters". L'équation de notre modèle est Y = aX + b + e.
+
+Y (Target) est la variable "price" X est la variable explicative "squareMeters" e est le risque d'erreur de mon modèle.
+
+Nous allons donc utiliser un modèle de régression linéaire simple pour effectuer nos prédictions de prix.
+
+```{r}
+#Modèle de régression linéaire simple
+model <- lm(price ~ squareMeters, data=data)
+model
+
+```
+
+L'équation de notre modèle de régression linéaire est donc:
+
+price= 100\*squareMeters + 6461 + E
+
+```{r}
+#Evaluation du modèle et affichage des coefficients du modèle
+summary(model)
+error <- sigma(model)*100/mean(data$price)
+cat("Le pourcentage d'erreur du modèle est de",error,"%")
+```
+
+```{r}
+
+#Enregistrement du modèle qui sera utilisé pour les prédictions de prix
+save(model, file="model.Rdata")
+
+```
+
+[**visualisation et création d'un rapport: creer un rapport**]{.ul}
+
+L'extension DataExplorer fournit des outils d'exploration graphique d'un fichier de données. En premier lieu, sa fonction create_report génère un rapport automatique à partir d'un tableau de données.
+
+```{r}
+library(DataExplorer)
+create_report(data)
+
+```
+
+L'extension dataMaid propose une fonction makeCodebook permettant de générer une présentation de l'ensemble des variables d'un tableau de données, au format PDF, Word ou HTML.
+
+```{r}
+library(dataMaid)
+makeCodebook(data)
+
+```
